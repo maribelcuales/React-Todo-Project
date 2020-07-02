@@ -9,7 +9,7 @@ class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      toDo: ''
+      toDoItems: ''
     }
   }
 
@@ -19,7 +19,9 @@ class App extends React.Component {
           <h1>Todo List: MVP</h1>
           <TodoForm /> 
         </div>
-          <TodoList />
+          <TodoList 
+            toDoItems={this.state.toDoItems}
+          />
       </div>
   }
 }
