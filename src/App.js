@@ -9,21 +9,23 @@ class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      toDoItems: ''
-    }
+      todoItems: ''
+    };
   }
 
   render() {
+    return (
       <div>
         <div>
           <h1>Todo List: MVP</h1>
-          <TodoForm /> 
+          {/* <TodoForm />  */}
         </div>
           <TodoList 
-            toDoItems={this.state.toDoItems}
+            todoItems={this.state.todoItems}
           />
       </div>
-  }
-}
+    );
+  };
+};
 
 export default App;
