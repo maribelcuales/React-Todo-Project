@@ -57,7 +57,7 @@ class App extends React.Component {
         </div>
           <TodoList 
             todoItems={this.state.todoItems}
-            toggleTodo={this.state.toggleTodo}
+            toggleTodo={this.toggleTodo}
           />
       </div>
     );
