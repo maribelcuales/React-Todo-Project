@@ -8,6 +8,11 @@ class TodoForm extends React.Component {
     };
   }
 
+  handleChanges = e => {
+    e.preventDefault();
+    this.setState({ [e.target.name]: e.target.value });
+  }; 
+
   render() {
     return (
       <form>
