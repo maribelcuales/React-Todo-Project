@@ -8,6 +8,11 @@ const todoArray = [
     task: 'Buy groceries',
     id: Date.now(),
     completed: false
+  },
+  {
+    task: 'Bake Cookies',
+    id: Date.now(),
+    completed: false
   }
 ];
 
