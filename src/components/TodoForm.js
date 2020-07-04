@@ -13,9 +13,15 @@ class TodoForm extends React.Component {
     this.setState({ [e.target.name]: e.target.value });
   }; 
 
+  submitTodo = e => {
+    e.preventDefault();
+    this.setState({ todoItem: "" });
+    this.props.addTodo(e, this.state.todoItem);
+  };
+
   render() {
     return (
-      <form>
+      <form onSubmit={this.submitTodo}>
         <input 
           type="text"
           name="todoItem"
