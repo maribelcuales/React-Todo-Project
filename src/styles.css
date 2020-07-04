@@ -51,20 +51,6 @@ h1 {
   margin: 0 auto;
 }
 
-.item {
-  background-color: #b5838d;
-  width: 45%;
-  text-align: left;
-  margin: 4px 0;
-  padding-left: 8px;
-  cursor: pointer;
-}
-
-.item.completed {
-  background-color: #ffb4a2;
-  text-decoration: line-through;
-}
-
 form {
   width: 50%;
   display: flex;
@@ -79,21 +65,28 @@ form > input {
   width: 240px;
   outline: 0;
   color: white;
-  border-bottom: 1px solid #b5838d; 
+  border-bottom: 1px solid #ffb4a2; 
   margin-right: 8px;
 }
 
 button {
-  background-color: #b5838d;
-  border: 1px solid #b5838d;
+  background-color: #ffb4a2;
+  border: 1px solid #ffb4a2;
   color: white; 
   font-size: 16px;
   padding: 6px 14px; 
   width: 200px;
 }
 input::placeholder {
-  color: #b5838d;
+  color: #ffb4a2;
   opacity: 1;
+}
+
+.clear-btn {
+  margin-top: 20px;
+  width: 45%;
+  padding-top: 5px;
+  background-color: yellow;
 }
 
 
