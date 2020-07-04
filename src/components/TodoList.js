@@ -3,6 +3,7 @@
 
 import React from "react";
 import Todo from "./Todo";
+import '../styles.css';
 
 const TodoList = props => {
   return (
@@ -14,10 +15,12 @@ const TodoList = props => {
           toggleTodo={props.toggleTodo}
         />
       ))}
-      <button className="clear=btn"
-      onClick={props.clearCompleted}>
-        Clear Completed
-      </button>
+      <div className="clear-btn-container">
+        <button className="clear=btn"
+        onClick={props.clearCompleted}>
+          Clear Completed
+        </button>
+      </div>
     </div>
   );
 };
