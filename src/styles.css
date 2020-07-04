@@ -44,11 +44,15 @@ h1 {
 }
 
 .todo-list {
-
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .item {
-  background-color: #e5989b;
+  background-color: #b5838d;
   width: 45%;
   text-align: left;
   margin: 4px 0;
@@ -57,6 +61,6 @@ h1 {
 }
 
 .item.completed {
-  background-color: #d17d7c;
+  background-color: #ffb4a2;
   text-decoration: line-through;
 }
