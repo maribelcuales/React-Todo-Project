@@ -83,3 +83,17 @@ form > input {
   margin-right: 8px;
 }
 
+button {
+  background-color: #b5838d;
+  border: 1px solid #b5838d;
+  color: white; 
+  font-size: 16px;
+  padding: 6px 14px; 
+  width: 200px;
+}
+input::placeholder {
+  color: #b5838d;
+  opacity: 1;
+}
+
+
