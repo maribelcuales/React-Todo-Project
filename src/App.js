@@ -5,7 +5,8 @@ import TodoList from './components/TodoList';
 const todoArray = [
   {
     name: 'Buy groceries',
-    id: Date.now()
+    id: Date.now(),
+    completed: false
   }
 ];
 
