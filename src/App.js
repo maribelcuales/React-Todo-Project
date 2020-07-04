@@ -45,7 +45,7 @@ class App extends React.Component {
   addTodo = (e, item) => {
     e.preventDefault();
     const newTodo = {
-      name: item,
+      task: item,
       id: Date.now(),
       completed: false
     };
