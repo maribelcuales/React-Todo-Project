@@ -33,6 +33,21 @@ class App extends React.Component {
     });
   };
 
+  toggleTodo = itemId => {
+    console.log(itemId);
+    this.setState({
+      todoItems: 
+      this.state.todoItems.map(item => {
+        if (itemId === item.id) {
+          return {
+            ...item, completed: !item.completed
+          };
+        }
+        return item;
+      })
+    });
+  };
+
   render() {
     return (
       <div>
@@ -42,6 +57,7 @@ class App extends React.Component {
         </div>
           <TodoList 
             todoItems={this.state.todoItems}
+            toggleTodo={this.state.toggleTodo}
           />
       </div>
     );
