@@ -5,7 +5,7 @@ import './styles.css';
 
 const todoArray = [
   {
-    name: 'Buy groceries',
+    task: 'Buy groceries',
     id: Date.now(),
     completed: false
   }
@@ -22,18 +22,6 @@ class App extends React.Component {
     };
   }
 
-  addTodo = (e, item) => {
-    e.preventDefault();
-    const newTodo = {
-      name: item,
-      id: Date.now(),
-      completed: false
-    };
-    this.setState({
-      todoItems: [...this.state.todoItems, newTodo]
-    });
-  };
-
   toggleTodo = itemId => {
     console.log(itemId);
     this.setState({
@@ -46,6 +34,18 @@ class App extends React.Component {
         }
         return item;
       })
+    });
+  };
+
+  addTodo = (e, item) => {
+    e.preventDefault();
+    const newTodo = {
+      name: item,
+      id: Date.now(),
+      completed: false
+    };
+    this.setState({
+      todoItems: [...this.state.todoItems, newTodo]
     });
   };
 
