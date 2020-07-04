@@ -1,0 +1,15 @@
+.item {
+  background-color: #ffb4a2;
+  width: 45%;
+  text-align: left;
+  margin: 4px 0;
+  padding-left: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.item.completed {
+  background-color:  #b5838d;
+  text-decoration: line-through;
+  font-style: oblique;
+}
