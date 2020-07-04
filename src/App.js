@@ -5,13 +5,13 @@ import './styles.css';
 
 const todoArray = [
   {
-    task: 'Buy groceries',
-    id: Date.now(),
+    task: 'Organize Garage',
+    id: 1528817077286,
     completed: false
   },
   {
     task: 'Bake Cookies',
-    id: Date.now(),
+    id: 1528817084358,
     completed: false
   }
 ];
