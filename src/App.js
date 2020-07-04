@@ -2,6 +2,13 @@ import React from 'react';
 import TodoForm from './components/TodoForm';
 import TodoList from './components/TodoList';
 
+const todoArray = [
+  {
+    todoItemsList: '',
+    id: Date.now()
+  }
+];
+
 class App extends React.Component {
   // you will need a place to store your state in this component.
   // design `App` to be the parent component of your application.
@@ -9,7 +16,7 @@ class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      todoItems: ''
+      todoItems: todoArray
     };
   }
 
