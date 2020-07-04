@@ -59,8 +59,8 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
-        <div>
+      <div className="App">
+        <div className="header">
           <h1>Todo List: MVP</h1>
           <TodoForm addTodo={this.addTodo} /> 
         </div>
